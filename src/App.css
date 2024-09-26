@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
+@media screen and (max-width: 400px) {
+  #features {
+    padding: 20px;
+    width: 111%;
+  }
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact,
+  #footer {
+    width: 111%;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  #portfolio {
+    width: 110%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Fullscreen Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fullscreen Modal Image */
+.modal-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* White Close Button */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 50px;
+  font-weight: bold;
   color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 1001;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.close-button:hover {
+  color: red;
 }
