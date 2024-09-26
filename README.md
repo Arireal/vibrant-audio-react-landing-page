@@ -1,5 +1,5 @@
 # Vibrant Audio - Music Studio Landing Page
-# A Music studio React Lading Page Display 
+
 ### <a href="https://www.ariane-dev.music-studio.adwstudium.com/">LIVE DEMO</a> 
 
 ## Project Overview:
